@@ -6,22 +6,32 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "netlify:build": "netlify build",
+    "netlify:dev": "netlify dev"
   },
   "dependencies": {
+    "file-saver": "^2.0.5",
+    "formidable": "^3.5.4",
+    "framer-motion": "^12.23.3",
+    "mongodb": "^6.17.0",
+    "next": "15.3.5",
+    "next-connect": "^1.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.5"
+    "react-select": "^5.10.2"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@netlify/next": "^1.4.9",
+    "@tailwindcss/postcss": "^4.1.11",
+    "@types/file-saver": "^2.0.7",
+    "@types/formidable": "^3.4.5",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.3.5",
-    "@eslint/eslintrc": "^3"
+    "typescript": "^5"
   }
 }
