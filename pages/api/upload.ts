@@ -18,12 +18,13 @@ export default async function handler(req: any, res: any) {
 
   const form = new IncomingForm({ uploadDir: './parser/temp', keepExtensions: true });
 
-  const [fields, files] = await new Promise((resolve, reject) => {
-    form.parse(req, (err, fields, files) => {
-      if (err) reject(err);
-      else resolve([fields, files]);
-    });
+  const { fields, files }: { fields: any; files: any } = await new Promise((resolve, reject) => {
+  form.parse(req, (err, fields, files) => {
+    if (err) reject(err);
+    else resolve({ fields, files });
   });
+});
+
 
   const file = files.file;
   if (!file) {
