@@ -19,7 +19,6 @@ const predefinedCourses = [
   "Aeronautical Engineering",
   "Agricultural Engineering",
   "Artificial Intelligence",
-  "Artificial Intelligence (AI) and Data Science",
   "Artificial Intelligence and Data Science",
   "Artificial Intelligence and Machine Learning",
   "Automation and Robotics",
@@ -104,10 +103,9 @@ const predefinedCourses = [
   "Textile Chemistry",
   "Textile Engineering / Technology",
   "Textile Plant Engineering",
-  "Textile Technology"
+  "Textile Technology"];
 
-/* your 90+ course list */];
-const predefinedCategories = ["GOPEN", "GSC", "GST", "GOBC", "GSEBC", "LOPEN", "LST", "LOBC", "LSEBC", "EWS"];
+const predefinedCategories = ["GOPEN", "GSC", "GOBC", "GSEBC", "GST", "GNTA", "GNTB", "GNTC", "GNTD", "LOPEN", "LSC", "LST", "LOBC", "LSEBC", "LNTA", "LNTB", "LNTC", "LNTD", "EWS", "DEF-O", "DEFR-OBC", "PWD-O", "PWDR-O", "PWDR-OBC", "MI", "ORP"];
 
 const courseOptions = predefinedCourses.map(c => ({ label: c, value: c }));
 const categoryOptions = predefinedCategories.map(c => ({ label: c, value: c }));
